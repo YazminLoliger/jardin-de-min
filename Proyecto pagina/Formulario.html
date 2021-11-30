@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="shortcut icon" href="galeria/nepencarita.png">
+    <link rel="stylesheet" href="Formulario.css">
+
+    <title>Formulario de contacto</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#"><img class="logo" src="galeria/logo.ico" alt="logo"></a>
+
+            <ul class="enlaces-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Galeria.html">Galeria</a></li>
+                <li><a href="Formulario.html">Contactate</a></li>
+                <li><a href="sobremi.html">Sobre mi</a></li>
+            </ul>
+            <button class="ham" type="button">   <!-- ANIMACIÓN-->
+                <span class="br-1"></span>
+                <span class="br-2"></span>
+                <span class="br-3"></span>
+            </button>                       
+        </nav>
+    </header>
+
+
+    <div class="wrapper">
+        <h2>Contactame</h2>
+        <div id="error_message">
+        </div>
+        <form action="" id="myform" onsubmit = "return validate();">
+          <div class="input_field">
+              <input type="text" placeholder="Nombre" id="Nombre">
+          </div>
+          <div class="input_field">
+              <input type="text" placeholder="Asunto" id="Asunto">
+          </div>
+          <div class="input_field">
+              <input type="text" placeholder="Telefono" id="Telefono">
+          </div>
+          <div class="input_field">
+              <input type="text" placeholder="Mail" id="Mail">
+          </div>
+          <div class="input_field">
+              <textarea placeholder="Mensaje" id="Mensaje"></textarea>
+          </div>
+          <div class="btn">
+              <input type="submit">
+          </div>
+        </form>
+      </div>
+      <script src="Formulario.js"></script>
+</body>
+</html>
